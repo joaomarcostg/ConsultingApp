@@ -1,0 +1,12 @@
+<div class="menuitem-container">
+    <img [src]="imgUrl">
+    <p>{{title}}</p>
+    <div class="btn">
+    <button [ngStyle]="btnStyle" (click)="onClicked()"></button>
+    </div>
+    <div [hidden]="isHidden" class="content">
+        <div>Ecommerce</div>
+        <div>CRM</div>
+        <div>Projects</div>
+    </div>
+</div>
