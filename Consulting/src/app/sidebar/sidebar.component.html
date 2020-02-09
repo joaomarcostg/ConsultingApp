@@ -1,9 +1,23 @@
 <div class="sidebar-container">
     <div class="company">
-        <img src="">
+        <img [src]="imgUrl">
     </div>
     <div class="navigation">
-        <p>Navigation</p>
-        <app-menuitem></app-menuitem>
+        <p class="category">Navigation</p>
+        <app-menuitem [title]="dashboard.title" [iconUrl]="dashboard.iconUrl" [content]="dashboard.content">
+        </app-menuitem>
+        <app-menuitem [title]="apps.title" [iconUrl]="apps.iconUrl" [content]="apps.content">
+        </app-menuitem>
+        <app-menuitem [title]="pages.title" [iconUrl]="pages.iconUrl" [content]="pages.content">
+        </app-menuitem>
+        <p class="category">Components</p>
+        <app-menuitem [title]="uikit.title" [iconUrl]="uikit.iconUrl" [content]="uikit.content">
+        </app-menuitem>
+        <app-menuitem [title]="widgets.title" [iconUrl]="widgets.iconUrl" [content]="widgets.content">
+        </app-menuitem>
+        <app-menuitem [title]="forms.title" [iconUrl]="forms.iconUrl" [content]="forms.content">
+        </app-menuitem>
+        <app-menuitem [title]="charts.title" [iconUrl]="charts.iconUrl" [content]="charts.content">
+        </app-menuitem>
     </div>
 </div>

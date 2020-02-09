@@ -1,12 +1,14 @@
 <div class="menuitem-container">
-    <img [src]="imgUrl">
-    <p>{{title}}</p>
-    <div class="btn">
-    <button [ngStyle]="btnStyle" (click)="onClicked()"></button>
+    <div class="item">
+        <div class="icon">
+            <svg-icon [src]="iconUrl" [applyCss]="true"></svg-icon>
+        </div>
+        <p>{{title}}</p>
+        <div class="btn">
+            <button [ngStyle]="btnStyle" (click)="onClicked()">{{count}}</button>
+        </div>
     </div>
-    <div [hidden]="isHidden" class="content">
-        <div>Ecommerce</div>
-        <div>CRM</div>
-        <div>Projects</div>
+    <div [ngStyle]="contentStyle" [hidden]="isHidden" class="itemcontent">
+        <p class="child" *ngFor="let item of content"> {{item}} </p>
     </div>
 </div>

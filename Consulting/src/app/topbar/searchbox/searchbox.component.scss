@@ -1,0 +1,48 @@
+.searchbox-container {
+  display: flex;
+  flex-wrap: no-wrap;
+  justify-content: space-between;
+  width: 300px;
+  height: 35px;
+  background: #f1f3fa;
+
+  .icon {
+    width: 12%;
+    background: #f1f3fa;
+    padding: 8px;
+
+    svg-icon {
+      fill: rgb(105, 102, 99);
+    }
+  }
+  input {
+    font: inherit;
+    font-size: 14px;
+    color: rgb(105, 102, 99);
+    width: 68%;
+    background: #f1f3fa;
+    border: none;
+    padding: 0px 4px;
+  }
+
+  button {
+    cursor: pointer;
+    width: 25%;
+    background: #727df5;
+    color: rgba($color: #fff, $alpha: .8);
+    font-weight: bold;
+    border: 1px solid rgba($color: rgb(167, 175, 255), $alpha: 1);
+    border-radius: 2px;
+    
+    &:hover {
+      color: rgba($color: #fff, $alpha: 1.0);
+      border: 1px solid rgba($color: rgb(167, 175, 255), $alpha: 1);
+      background-color: rgba($color: #727df5, $alpha: 0.6);
+    }
+
+    &:active{
+      background-color: rgba($color: #727df5, $alpha: 1.0);
+      transition: ease-out 0.2s;
+    }
+  }
+}

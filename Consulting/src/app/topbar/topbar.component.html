@@ -1,1 +1,31 @@
-<p>topbar works!</p>
+<div class="topbar-container">
+    <app-searchbox></app-searchbox>
+    <div class="options">
+        <div class="buttons">
+
+            <div class="tbicon">
+                <svg-icon [applyCss]="true" [src]="settingsIconUrl"></svg-icon>
+            </div>
+            <div class="language">
+                <svg-icon [applyCss]="true" [src]="currentlang"></svg-icon>
+                <select name="lang" id="langselect" (change)="onChangeLanguage($event.target.value)">
+                    <option *ngFor="let lang of languages" [value]="lang.iconUrl"
+                        [style.backgroundImage]="lang.iconUrl">
+                        {{lang.text}}</option>
+                </select>
+            </div>
+            <div class="tbicon">
+                <svg-icon [applyCss]="true" [src]="notificationsIconUrl"></svg-icon>
+            </div>
+        </div>
+        <div class="user">
+            <div class="image">
+                <img [src]="userImgUrl" class="userimg">
+            </div>
+            <div class="info">
+                <p class="name">João Marcos</p>
+                <p class="role">Founder</p>
+            </div>
+        </div>
+    </div>
+</div>
