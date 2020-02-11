@@ -1,0 +1,29 @@
+.infobox-container {
+  margin: 20px 20px;
+  width: 160px;
+  height: 160px;
+  //   border: 1px solid rgba($color: #aaa, $alpha: 0.1);
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: -12px -12px 12px rgba($color: #eee, $alpha: 0.8), 12px 12px 12px rgba($color: #000, $alpha: 0.08);
+  padding: 16px;
+  .type {
+    font-size: 16px;
+    color: #888;
+  }
+  .value {
+    padding: 15px 0px;
+    font-size: 24px;
+    color: #444;
+  }
+
+  .percent {
+    color: #00b000;
+    font-size: 14px;
+  }
+
+  .period {
+    color: #888;
+    font-size: 12px;
+  }
+}

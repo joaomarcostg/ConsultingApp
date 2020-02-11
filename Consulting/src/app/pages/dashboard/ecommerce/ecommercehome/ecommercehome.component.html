@@ -1,0 +1,34 @@
+<div class="ecommerce-container">
+    <div class="nav">
+
+        <p>Dashboard</p>
+        <div class="pickarea">
+            <mat-form-field color="#727Df5">
+                <mat-label color="#727DF5">MM/DD/YYYY</mat-label>
+                <input matInput [matDatepicker]="picker">
+                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker color="#727DF5"></mat-datepicker>
+            </mat-form-field>
+            <div class="btn" (click)="animateRefresh()">
+                <div id="refresh">
+                    <svg-icon [src]="refreshIcon"></svg-icon>
+                </div>
+            </div>
+            <div class="btn">
+                <div id="hide">
+                    <svg-icon [src]="hideIcon" (click)="animateHide()"></svg-icon>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main" id="mainid">
+        <div class="groups">
+            <app-infobox *ngFor="let group of groups" [type]="group.type" [value]="group.value"
+                [percent]="group.percent" [period]="group.period"></app-infobox>
+        </div>
+        <div class="pxachart">
+            <app-projectionschart [barChartData]="barChartData" [barChartLabels]="barChartLabels" [barChartLegend]="barChartLegend" [barChartOptions]="barChartOptions" [barChartPlugins]="barChartPlugins" [barChartType]="barChartType"></app-projectionschart>
+        </div>
+    </div>
+</div>

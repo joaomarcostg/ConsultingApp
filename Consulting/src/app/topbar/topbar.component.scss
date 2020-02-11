@@ -1,5 +1,6 @@
 .topbar-container {
   position: absolute;
+  z-index: 3;
   top: 0;
   left: 240px;
   background: #fff;
@@ -59,13 +60,26 @@
         }
 
         select {
+          background-image: url("../../assets/topbar/angle-down-grey.svg");
+          background-repeat: no-repeat;
+          background-color: #fff;
+          background-position: right;
+          -webkit-appearance: none;
           cursor: pointer;
           margin-left: 10px;
           font: inherit;
-          background: #fff;
           border: none;
           color: rgb(105, 102, 99);
           width: 120px;
+
+          &:hover {
+            background-image: url("../../assets/topbar/angle-down-purple.svg");
+            color: #727df5;
+          }
+          
+          option{
+            color: rgb(105, 102, 99)
+          }
         }
       }
     }

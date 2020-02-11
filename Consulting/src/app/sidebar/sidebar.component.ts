@@ -7,42 +7,42 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SidebarComponent implements OnInit {
 
-  imgUrl = 'assets/only2_1.png'
+  imgUrl = 'assets/sidebar/companylogo.png'
 
   dashboard = {
     title: 'Dashboard',
-    iconUrl: 'assets/dashboard_icon.svg',
-    content: ['Ecommerce', 'CRM', 'Projects'],
+    iconUrl: 'assets/sidebar/dashboard_icon.svg',
+    content: ['ecommerce', 'crm', 'projects'],
   }
 
   apps = {
     title: 'Apps',
-    iconUrl: 'assets/apps_icon.svg',
+    iconUrl: 'assets/sidebar/apps_icon.svg',
     content: []
   }
   pages = {
     title: 'Pages',
-    iconUrl: 'assets/pages_icon.svg',
+    iconUrl: 'assets/sidebar/pages_icon.svg',
     content: []
   }
   uikit = {
     title: 'Ui Kit',
-    iconUrl: 'assets/uikit_icon.svg',
+    iconUrl: 'assets/sidebar/uikit_icon.svg',
     content: []
   }
   widgets = {
     title: 'Widgets',
-    iconUrl: 'assets/widgets_icon.svg',
+    iconUrl: 'assets/sidebar/widgets_icon.svg',
     content: []
   }
   forms = {
     title: 'Forms',
-    iconUrl: 'assets/forms_icon.svg',
+    iconUrl: 'assets/sidebar/forms_icon.svg',
     content: []
   }
   charts = {
     title: 'Charts',
-    iconUrl: 'assets/charts_icon.svg',
+    iconUrl: 'assets/sidebar/charts_icon.svg',
     content: []
   }
 

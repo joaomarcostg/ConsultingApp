@@ -1,0 +1,10 @@
+:host {
+    .main-container{
+        position: absolute;
+        width: calc(100vw - 240px);
+        height: calc(100vh - 70px);
+        left: 240px;
+        top: 70px;
+        background-color: #F1F3FA;
+    }
+}

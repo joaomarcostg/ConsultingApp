@@ -1,0 +1,32 @@
+.infobox-container {
+  margin: 20px 20px;
+  width: 160px;
+  height: 160px;
+  border-radius: 8px;
+  background: #fff;
+  -webkit-box-shadow: -12px -12px 12px rgba(238, 238, 238, 0.8), 12px 12px 12px rgba(0, 0, 0, 0.08);
+          box-shadow: -12px -12px 12px rgba(238, 238, 238, 0.8), 12px 12px 12px rgba(0, 0, 0, 0.08);
+  padding: 16px;
+}
+
+.infobox-container .type {
+  font-size: 16px;
+  color: #888;
+}
+
+.infobox-container .value {
+  padding: 15px 0px;
+  font-size: 24px;
+  color: #444;
+}
+
+.infobox-container .percent {
+  color: #00b000;
+  font-size: 14px;
+}
+
+.infobox-container .period {
+  color: #888;
+  font-size: 12px;
+}
+/*# sourceMappingURL=infobox.component.css.map */

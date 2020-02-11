@@ -1,1 +1,142 @@
-/* No CSS *//*# sourceMappingURL=topbar.component.css.map */
+.topbar-container {
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  left: 240px;
+  background: #fff;
+  width: calc(100vw - 240px);
+  height: 70px;
+  -webkit-box-shadow: 0 1px 16px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 1px 16px rgba(0, 0, 0, 0.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.topbar-container app-searchbox {
+  margin: auto 0px auto 30px;
+}
+
+.topbar-container .options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 0px 30px 0px 0px;
+  width: 420px;
+  height: 100%;
+}
+
+.topbar-container .options .buttons {
+  width: 240px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: auto 16px auto 0px;
+}
+
+.topbar-container .options .buttons .tbicon {
+  cursor: pointer;
+  width: 30px;
+  height: 35px;
+}
+
+.topbar-container .options .buttons .tbicon svg-icon {
+  fill: #696663;
+}
+
+.topbar-container .options .buttons .tbicon:hover svg-icon {
+  fill: #727df5;
+}
+
+.topbar-container .options .buttons .tbicon:active svg-icon {
+  fill: rgba(114, 125, 245, 0.6);
+  -webkit-transition: ease-out 0.2s;
+  transition: ease-out 0.2s;
+}
+
+.topbar-container .options .buttons .language {
+  width: 180px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0px 20px;
+}
+
+.topbar-container .options .buttons .language svg-icon {
+  width: 30px;
+}
+
+.topbar-container .options .buttons .language select {
+  background-image: url("../../assets/topbar/angle-down-grey.svg");
+  background-repeat: no-repeat;
+  background-color: #fff;
+  background-position: right;
+  -webkit-appearance: none;
+  cursor: pointer;
+  margin-left: 10px;
+  font: inherit;
+  border: none;
+  color: #696663;
+  width: 120px;
+}
+
+.topbar-container .options .buttons .language select:hover {
+  background-image: url("../../assets/topbar/angle-down-purple.svg");
+  color: #727df5;
+}
+
+.topbar-container .options .buttons .language select option {
+  color: #696663;
+}
+
+.topbar-container .options .user {
+  border-left: 1px solid rgba(105, 102, 99, 0.1);
+  border-right: 1px solid rgba(105, 102, 99, 0.1);
+  background: #fafbfd;
+  width: 180px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.topbar-container .options .user .image {
+  margin: auto 0px;
+}
+
+.topbar-container .options .user .image img {
+  vertical-align: middle;
+  width: 40px;
+  height: 40px;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.topbar-container .options .user .info {
+  margin: auto 0px auto 10px;
+  color: #797979;
+}
+
+.topbar-container .options .user .info .name {
+  font-size: 16px;
+}
+
+.topbar-container .options .user .info .role {
+  font-size: 12.5px;
+}
+/*# sourceMappingURL=topbar.component.css.map */

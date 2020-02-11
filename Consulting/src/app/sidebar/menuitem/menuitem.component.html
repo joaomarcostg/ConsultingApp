@@ -1,14 +1,14 @@
 <div class="menuitem-container">
-    <div class="item">
+    <div class="item" (click)="onClicked()">
         <div class="icon">
             <svg-icon [src]="iconUrl" [applyCss]="true"></svg-icon>
         </div>
         <p>{{title}}</p>
         <div class="btn">
-            <button [ngStyle]="btnStyle" (click)="onClicked()">{{count}}</button>
+            <button [ngStyle]="btnStyle">{{count}}</button>
         </div>
     </div>
     <div [ngStyle]="contentStyle" [hidden]="isHidden" class="itemcontent">
-        <p class="child" *ngFor="let item of content"> {{item}} </p>
+        <p [routerLink]="item" class="child" *ngFor="let item of content"> {{item}} </p>
     </div>
 </div>

@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SearchboxComponent implements OnInit {
 
-  searchIcon = "assets/search_icon.svg"
+  searchIcon = "assets/topbar/search_icon.svg"
   settingsIcon = ""
   notificationsIcon = ""
   userImg = ""

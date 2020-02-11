@@ -1,8 +1,15 @@
 .menuitem-container {
-  font-family: Arial, Helvetica, sans-serif;
-  color: white;
-  padding: 4px;
+  color: rgba(255, 255, 255, 0.8);
   margin: 10px 0px;
+  cursor: pointer;
+}
+
+.menuitem-container:hover {
+  color: white;
+}
+
+.menuitem-container:hover .item .icon svg-icon {
+  fill: white;
 }
 
 .menuitem-container .item {
@@ -13,23 +20,52 @@
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   width: 100%;
+  padding: 0px 10%;
   height: 30px;
 }
 
-.menuitem-container .item img {
+.menuitem-container .item .icon {
   width: 20%;
   height: 100%;
+  vertical-align: middle;
+  margin: auto 0px;
+  padding: 6px;
+}
+
+.menuitem-container .item .icon svg-icon {
+  fill: rgba(255, 255, 255, 0.8);
 }
 
 .menuitem-container .item p {
-  width: 60%;
+  vertical-align: middle;
+  width: 80%;
   margin: auto 0px auto 5%;
   font-size: 16px;
 }
 
 .menuitem-container .item .btn {
-  width: 20%;
+  width: 10%;
   margin: auto 0px;
-  text-align: center;
+}
+
+.menuitem-container .item .btn button {
+  vertical-align: middle;
+}
+
+.menuitem-container .itemcontent {
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+}
+
+.menuitem-container .itemcontent p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+  padding: 8px 25%;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.menuitem-container .itemcontent p:hover {
+  color: white;
 }
 /*# sourceMappingURL=menuitem.component.css.map */

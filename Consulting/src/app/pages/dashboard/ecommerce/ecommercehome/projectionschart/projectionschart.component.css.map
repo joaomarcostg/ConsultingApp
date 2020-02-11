@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,2BAA2B,CAAA;EACvB,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;EACZ,OAAO,EAAE,IAAI;EACb,UAAU,EAAE,IAAI;EAChB,UAAU,EAAG,KAAI,CAAE,KAAI,CAAC,IAAI,CAAc,wBAAI,EAAgB,IAAI,CAAC,IAAI,CAAC,IAAI,CAAc,mBAAI;EAC9F,aAAa,EAAE,GAAG;CACrB",
+    "sources": [
+        "projectionschart.component.scss"
+    ],
+    "names": [],
+    "file": "projectionschart.component.css"
+}

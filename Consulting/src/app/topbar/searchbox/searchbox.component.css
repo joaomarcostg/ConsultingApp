@@ -1,0 +1,56 @@
+.searchbox-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 300px;
+  height: 35px;
+  background: #f1f3fa;
+}
+
+.searchbox-container .icon {
+  width: 12%;
+  background: #f1f3fa;
+  padding: 8px;
+}
+
+.searchbox-container .icon svg-icon {
+  fill: #696663;
+}
+
+.searchbox-container input {
+  font: inherit;
+  font-size: 14px;
+  color: #696663;
+  width: 68%;
+  background: #f1f3fa;
+  border: none;
+  padding: 0px 4px;
+}
+
+.searchbox-container button {
+  width: 25%;
+  cursor: pointer;
+  background: #727df5;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: bold;
+  border: 1px solid #a7afff;
+  border-radius: 2px;
+}
+
+.searchbox-container button:hover {
+  color: white;
+  border: 1px solid #a7afff;
+  background-color: rgba(114, 125, 245, 0.6);
+}
+
+.searchbox-container button:active {
+  background-color: #727df5;
+  -webkit-transition: ease-out 0.2s;
+  transition: ease-out 0.2s;
+}
+/*# sourceMappingURL=searchbox.component.css.map */

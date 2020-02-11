@@ -11,7 +11,7 @@ export class MenuitemComponent implements OnInit {
   @Input() title = ''
   @Input() iconUrl = ''
   count = ''
-  buttonImg = 'assets/itembtn_icon.svg'
+  buttonImg = 'assets/sidebar/itembtn_icon.svg'
   isHidden = true
   btnStyle = {
     width: '16px',
